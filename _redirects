@@ -34,5 +34,4 @@
 /blog/*                /               301
 /post/*                /               301
 
-# Anything else from the old Wix site -> home page
-/*                     /               301
+# Anything else shows the custom 404.html page (served automatically by Netlify)
