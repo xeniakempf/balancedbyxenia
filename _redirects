@@ -1,0 +1,38 @@
+# Netlify redirects for old Wix URLs on balancedbyxenia.com
+# Real files (index.html, privacy.html, terms.html, sitemap.xml, robots.txt) are always served first.
+
+# Old Wix legal pages
+/privacy-policy        /privacy.html   301
+/privacy               /privacy.html   301
+/terms-and-conditions  /terms.html     301
+/terms-of-use          /terms.html     301
+/terms-of-service      /terms.html     301
+/terms                 /terms.html     301
+
+# Old Wix content pages -> matching section on the new home page
+/home                  /               301
+/about                 /#about         301
+/about-us              /#about         301
+/about-me              /#about         301
+/meet-xenia            /#about         301
+/services              /#paths         301
+/hormone-therapy       /#paths         301
+/womens-health         /#women         301
+/mens-health           /#men           301
+/pricing               /#pricing       301
+/fees                  /#pricing       301
+/faq                   /#faq           301
+/faqs                  /#faq           301
+/how-it-works          /#how           301
+/contact               /#top           301
+/contact-us            /#top           301
+/book-online           /#pricing       301
+/book-online/*         /#pricing       301
+/service-page/*        /#pricing       301
+/booking-calendar/*    /#pricing       301
+/blog                  /               301
+/blog/*                /               301
+/post/*                /               301
+
+# Anything else from the old Wix site -> home page
+/*                     /               301
